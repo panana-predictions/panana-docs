@@ -1,0 +1,44 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@font-face {
+  font-family: "KMR-Apparat";
+  src: url("/static/fonts/KMR-Apparat-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "KMR-Apparat-Bold";
+  src: url("/static/fonts/KMR-Apparat-Bold.ttf") format("truetype")
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0299a3;
+  --ifm-color-primary-dark: #028891;
+  --ifm-color-primary-darker: #027980;
+  --ifm-color-primary-darkest: #02686d;
+  --ifm-color-primary-light: #03aaba;
+  --ifm-color-primary-lighter: #04bbc8;
+  --ifm-color-primary-lightest: #05ccd6;
+
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'KMR-Apparat';
+  --ifm-heading-font-family: 'KMR-Apparat-Bold';
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #fbbc04;
+  --ifm-color-primary-dark: #e0a804;
+  --ifm-color-primary-darker: #c89503;
+  --ifm-color-primary-darkest: #a77a02;
+  --ifm-color-primary-light: #fdc515;
+  --ifm-color-primary-lighter: #fdcf26;
+  --ifm-color-primary-lightest: #fddc4d;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

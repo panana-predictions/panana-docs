@@ -1,0 +1,150 @@
+---
+sidebar_position: 1
+---
+# Automated Market Maker (AMM)
+
+## Overview
+
+Panana Predictions utilizes an **Automated Market Maker (AMM)** system tailored for binary outcome markets, ensuring continuous liquidity and dynamic price discovery without the need for traditional order books.
+
+## Key Components
+
+1. **Liquidity Pool**: A shared pool of funds that facilitates trading between outcome shares.
+2. **Outcome Shares**: Tokens representing possible outcomes of a prediction market.
+3. **Constant Product Formula**: Ensures the product of the quantities of outcome shares remains constant, guiding price adjustments.
+
+## How It Works
+
+### 1. Constant Product Formula
+
+In binary outcome markets, the AMM maintains the equation:
+
+$$ x \times y = k $$
+
+Where:
+- \( x \) = Quantity of Outcome A shares
+- \( y \) = Quantity of Outcome B shares
+- \( k \) = Constant product
+
+This formula ensures that any trade affecting the quantity of one outcome share inversely affects the price of the other, maintaining balance in the liquidity pool.
+
+### 2. Outcome Price Calculation
+
+The price of an outcome is determined by:
+
+$$
+\text{Price of Outcome A} = \frac{y}{x + y}
+$$
+
+$$
+\text{Price of Outcome B} = \frac{x}{x + y}
+$$
+
+As traders buy shares of an outcome, its price increases due to the reduced availability in the pool, while the opposing outcome's price decreases.
+
+### 3. Synthetic Liquidity System
+
+Panana Predictions utilizes a **synthetic liquidity model**, eliminating the need for initial liquidity providers. Instead of relying on users to supply liquidity, the system algorithmically adjusts the availability of shares to ensure a seamless trading experience. 
+
+**How Synthetic Liquidity Works:**
+- The system dynamically creates and adjusts shares for each outcome as users buy and sell. This **does not** impact the price.
+- Prices are determined by the **AMM formula**, maintaining fair value without requiring pooled capital.
+- This mechanism ensures that traders can always enter and exit positions without concerns about low liquidity or slippage.
+- Market depth is algorithmically adjusted to prevent extreme price fluctuations and manipulation.
+
+By using synthetic liquidity, Panana Predictions guarantees a **frictionless trading experience**, making markets more accessible and reducing liquidity risks for participants.
+
+### 4. Trading Mechanism
+
+Traders interact with the AMM by buying or selling outcome shares:
+
+- **Buying Outcome A Shares**:
+  - Increases the quantity of Outcome A shares in the pool.
+  - Decreases the price of Outcome A shares.
+  - Increases the price of Outcome B shares.
+- **Selling Outcome A Shares**:
+  - Decreases the quantity of Outcome A shares in the pool.
+  - Increases the price of Outcome A shares.
+  - Decreases the price of Outcome B shares.
+
+When a trade happens, shares of a particular outcome are bought or sold. This affects the **outcome pool**, redistributing shares and changing their price based on supply and demand. Since Panana Predictions uses an **automated market maker (AMM)**, prices adjust dynamically to reflect market sentiment.
+
+### Example: Buying Outcome A Shares
+#### Step 1: Trade Initiation
+Bob decides to buy **100 USDC worth of shares** for Outcome A in a binary outcome market.
+- He adds **USDC to the market** and receives **shares in return**.
+
+#### Step 2: Trading Fee Deduction
+A **1.5% trading fee** applies:
+- Bob contributes: **100 USDC - 1.5% = 98.5 USDC**.
+- **98 (rounded) shares** are added to each outcome pool.
+
+#### Step 3: Temporary Pool State
+After Bob’s trade, the **new share distribution** is:
+
+| Pool      | Shares |
+|-----------|--------|
+| Outcome A | 1098 (rounded)   |
+| Outcome B | 1098 (rounded)  |
+| Liquidity | 1000   |
+
+At this stage, the **constant product formula is temporarily broken**.
+
+#### Step 4: Adjusting Outcome A Pool Size
+To maintain equilibrium, we calculate the correct number of Outcome A shares using the formula:
+
+$$
+\text{SharesOutcomeA} = \frac{\text{SharesLiquidityPool}^2}{\text{SharesOutcomeB}}
+$$
+
+Applying the formula:
+
+| Pool      | Shares  |
+|-----------|---------|
+| Outcome B | 1098    |
+| Liquidity | 1000    |
+| Outcome A | 910 (rounded) |
+
+Bob effectively **purchased the difference**:
+
+$$
+1098 - 910 = 188
+$$
+
+Bob received **188 shares of Outcome A** for his **100 USDC trade**.
+
+#### Step 5: Impact on Outcome Prices
+The trade influences the prices of both outcomes. The new price calculation uses:
+
+$$
+\text{PriceOutcomeA} = \frac{\text{SharesOutcomeB}}{\sum \text{AllOutcomeShares}}
+$$
+
+$$
+\text{PriceOutcomeB} = \frac{\text{SharesOutcomeA}}{\sum \text{AllOutcomeShares}}
+$$
+
+Applying the values:
+
+$$
+\text{PriceOutcomeA} = \frac{1098}{1098 + 188} = 0.55
+$$
+
+$$
+\text{PriceOutcomeB} = \frac{910}{1098 + 910} = 0.45
+$$
+
+Bob’s purchase increased the price of **Outcome A**, reflecting higher market confidence in this result. The AMM ensures continuous liquidity, adjusting prices dynamically as users trade.
+
+## Benefits
+
+- **Continuous Liquidity**: Traders can always buy or sell outcome shares without waiting for a counterparty.
+- **Dynamic Pricing**: Prices adjust automatically based on supply and demand, reflecting the collective market sentiment.
+- **Decentralization**: The AMM operates without intermediaries, ensuring a trustless and transparent trading environment.
+
+## Considerations
+
+- **Price Slippage**: Large trades can significantly impact outcome prices, leading to less favorable rates for traders.
+
+By leveraging the AMM model, Panana Predictions offers a robust and efficient platform for decentralized prediction markets, ensuring fair pricing and ample liquidity for participants.
+
