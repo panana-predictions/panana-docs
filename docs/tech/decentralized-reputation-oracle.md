@@ -37,5 +37,5 @@ Commitee members will be announced in the near future.
 - Users can verify past rulings and the voting history of committee members.
 - The system is designed to be **community-driven**, with future improvements and changes governed by **decentralized proposals**.
 
-The **Decen*****tralized Reputation Oracle**** ensures fairness, eliminates conflicts of interest, and provides a ****transparent and verifiable**** resolution mechanism for Panana Predictions.*
+The **Decentralized Reputation Oracle** ensures fairness, eliminates conflicts of interest, and provides a ****transparent and verifiable**** resolution mechanism for Panana Predictions.
 

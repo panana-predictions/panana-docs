@@ -36,18 +36,20 @@ Crypto markets in Panana Predictions allow users to predict short-term price mov
 - **Regulatory Compliance:** Users are responsible for ensuring they comply with applicable regulations in their jurisdiction.
 
 ## 7. Fees
-- A **3% performance fee** applies to winning payouts.
 - No fees for market creation or participation.
+:::info
+Fees are not yet defined and may change at any time during the market's beta phase.
+:::
 
 ## 8. Example Use Cases
 **Example 1: Predicting APT/USDT Price Movement**
 - Alice, Bob, and Charlie enter a prediction for APT/USDT, each betting **$100**.  
 - Alice and Bob predict that the price will go **up**, while Charlie predicts that the price will go **down**.  
 - When the period ends, the price is higher than at the start.  
-- The total pool is **$300** (Alice: $100, Bob: $100, Charlie: $100).  
-- Since Charlie was on the losing side, his **$100** goes to the winning pool (minus the **3% performance fee**).  
-- The fee deducted is **$3**, leaving **$97** to be distributed to Alice and Bob.  
-- Since Alice and Bob contributed equally, they each receive **$48.50** in winnings, plus their initial **$100 stake**, totaling **$148.50** each, as well as **$XP tokens** for participation. 
+- The total pool is **\$300** (Alice: $100, Bob: $100, Charlie: $100).  
+- Since Charlie was on the losing side, his **$100** goes to the winning pool (minus a **3% performance fee**, fees are subject to change).  
+- The fee deducted is **\$3**, leaving **$97** to be distributed to Alice and Bob.  
+- Since Alice and Bob contributed equally, they each receive **\$48.50** in winnings, plus their initial **\$100 stake**, totaling **\$148.50** each, as well as **\$XP tokens** for participation. 
 - Charlie loses his bet but still earns **$XP tokens** for participation.  
 
 Crypto markets in Panana Predictions offer a fully decentralized and fast-paced way to engage in short-term crypto forecasting while earning rewards!

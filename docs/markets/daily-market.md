@@ -37,21 +37,23 @@ Daily markets in Panana Predictions allow users to predict on a variety of topic
 - **Regulatory Compliance:** Users must ensure participation aligns with their local regulations.
 
 ## 7. Fees
-- **No fees for market creation or participation.**
-- A **3% performance fee** applies to winning payouts.
+- No fees for market creation or participation.
+:::info
+Fees are not yet defined and may change at any time during the market's beta phase.
+:::
 
 ## 8. Example Use Case
 **Example: Predicting a Soccer Match Outcome**
-- Alice, Bob, Charlie, and Dave enter the daily market, each betting **$50**.  
+- Alice, Bob, Charlie, and Dave enter the daily market, each betting **\$50**.  
 - Alice and Charlie predict that **Team A will win**, while Bob and Dave predict that **Team A will lose**.  
 - After **24 hours**, the prediction phase closes.  
 - Within **24 hours**, the judge committee verifies the match result.  
 - **Outcome:** Team A wins.  
-- The total pool is **$200** (Alice: $50, Charlie: $50, Bob: $50, Dave: $50).  
-- Since Bob and Dave were on the losing side, their **$100** is redistributed to the winning pool (minus the **3% performance fee**).  
-- The fee deducted is **$3**, leaving **$97** for Alice and Charlie.  
-- Since Alice and Charlie contributed equally, they each receive **$48.50** in winnings, plus their initial **$50 stake**, totaling **$98.50** each.  
-- If the match is **canceled**, all participants receive their initial **$50** stake back.  
+- The total pool is **\$200** (Alice: $50, Charlie: $50, Bob: $50, Dave: $50).  
+- Since Bob and Dave were on the losing side, their **\$100** is redistributed to the winning pool (minus **3% performance fee**, fees are subject to change).  
+- The fee deducted is **\$3**, leaving **\$97** for Alice and Charlie.  
+- Since Alice and Charlie contributed equally, they each receive **\$48.50** in winnings, plus their initial **\$50 stake**, totaling **\$98.50** each.  
+- If the match is **canceled**, all participants receive their initial **\$50** stake back.  
 
 Daily markets in Panana Predictions provide an exciting and diverse way to engage with real-world events in a decentralized prediction ecosystem!
 

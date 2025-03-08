@@ -38,10 +38,10 @@ Share prediction markets in Panana Predictions allow users to trade shares repre
 - **Regulatory Considerations:** Users must ensure compliance with their local legal frameworks.
 
 ## 7. Fees
-- **1.5% transaction fee** on each buy/sell action.
-- **1.5% liquidity provider fee** to compensate liquidity providers.
-- **5% resolution fee** for users who hold their shares until market closure.
 - **500 USDC challenge fee** for dispute resolution via the **decentralized reputation oracle**.
+:::info
+Fees are not yet defined and may change at any time during the market's beta phase.
+:::
 
 ## 8. Example Use Case
 **Example: Predicting an Election Outcome**
