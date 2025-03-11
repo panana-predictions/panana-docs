@@ -9,18 +9,18 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'Panana',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/icons-Blue Icon.svg',
+  favicon: 'img/icons/Yellow Icon.svg',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.panana-predictions.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Panana', // Usually your GitHub org/user name.
+  projectName: 'Panana Predictions', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,13 +53,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.webp',
     navbar: {
       // title: 'Documentation',
       logo: {
         alt: 'Panana Logo',
-        src: 'img/Blue Black Logomark.svg',
-        srcDark: 'img/Blue White Logomark.svg'
+        src: 'img/Yellow Black Logomark.svg',
+        srcDark: 'img/Yellow White Logomark.svg'
       },
       items: [
         {
